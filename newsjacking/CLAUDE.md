@@ -12,10 +12,9 @@
 
 | Параметр | Значение |
 |---|---|
-| ID | `trig_01P3wdTRExUwz67ogztXNi7C` |
+| ID | `[YOUR_ROUTINE_ID]` |
 | Имя | `newsjacking-daily` |
 | Cron | `0 7 * * *` UTC = **10:00 МСК ежедневно** |
-| URL | https://claude.ai/code/routines/trig_01P3wdTRExUwz67ogztXNi7C |
 | Модель | `claude-sonnet-4-6` |
 | Инструменты | WebFetch, WebSearch, Bash |
 
@@ -66,7 +65,7 @@ newsjacking/
 
 **Если правишь конфиг (RSS, каналы, ключевые слова, MAX/MIN, угол отбора):**
 1. Поправить в `config.md` (документация)
-2. **Обязательно** обновить routine `trig_01P3wdTRExUwz67ogztXNi7C` через `/schedule` или RemoteTrigger API
+2. **Обязательно** обновить routine `[YOUR_ROUTINE_ID]` через `/schedule` или RemoteTrigger API
 3. Если не обновишь routine — изменения не дойдут до ежедневного дайджеста
 
 **Источник истины — routine.** Локальный config.md — только документация.
@@ -79,7 +78,7 @@ newsjacking/
 
 **Вариант 1 — через cloud-routine** (надёжно, идентично ежедневному):
 ```
-/schedule → run trig_01P3wdTRExUwz67ogztXNi7C
+/schedule → run [YOUR_ROUTINE_ID]
 ```
 
 **Вариант 2 — через локальный скилл** (быстро, в текущей сессии):
@@ -106,8 +105,6 @@ newsjacking/
 
 ## Текущий статус
 
-- ✅ Routine работает, последний запуск сегодня в 10:01 МСК
-- ✅ Параметры обновлены (MAX=10, MIN=5)
-- ✅ Доставка в TG настроена и работает
-- ✅ Документация полная
-- ⏳ Скилл `manual-digest` — для backup-запуска
+- Routine настроен на 10:00 МСК ежедневно
+- Параметры: MAX=10, MIN=5
+- Скилл `manual-digest` — для ручного запуска

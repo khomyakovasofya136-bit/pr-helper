@@ -31,7 +31,7 @@ from gspread.utils import rowcol_to_a1
 from pathlib import Path
 from datetime import date, timedelta
 
-SHEET_ID = "1E8YjDEJCBgdyd3bz25t908SxZVwJEfN5Ni65_myubYA"
+SHEET_ID = "[YOUR_GOOGLE_SHEET_ID]"  # Вставь ID своей таблицы из URL Google Sheets
 TAB_NAME = "Медиабаза"
 CREDS_FILE = Path(__file__).parent / "credentials.json"
 SCOPES = [
