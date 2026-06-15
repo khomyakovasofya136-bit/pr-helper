@@ -1,0 +1,37 @@
+﻿# Credentials
+mediabase/credentials.json
+*.json.key
+service_account*.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Local Claude settings
+**/.claude/settings.local.json
+
+# Operational artifacts — stay local, not for GitHub
+newsjacking/*_digest.md
+pitch/outputs/
+pitch/results/
+pitch/.claude/agent-memory/
+article-adapter/outputs/
+article-adapter/publications/*/research/
+article-adapter/publications/*/examples/
+article-adapter/publications/t-business/rules-publication.html
+article-adapter/promts/_legacy_combined.md
+b2bchat/posts/
+b2bchat/output/
+b2bchat/references/top-posts.md
+b2bchat/analytics.html
+b2bchat/analytics.pdf
+mediabase/media/
+
+# Backup files
+*.real_backup
+
+# OS
+.DS_Store
+Thumbs.db
